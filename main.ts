@@ -4,6 +4,7 @@ import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
+// A pickup line is just a cold start hoping to be warm by the second token.
 const line = 'Are you a context window? Because I keep running out of room for anyone else.';
 
 mkdirSync(outDir, { recursive: true });
